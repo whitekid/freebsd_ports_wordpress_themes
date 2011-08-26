@@ -98,11 +98,11 @@ DISTFILES+=	chocotheme.0.10.zip
 .endif
 
 .if defined(WITH_CONSTRUCTOR)
-DISTFILES+=	constructor.1.6.2.zip
+DISTFILES+=	constructor.1.6.4.zip
 .endif
 
 .if defined(WITH_ARJUNA_X)
-DISTFILES+=	arjuna-x.1.6.11.zip
+DISTFILES+=	arjuna-x.1.7.1.zip
 .endif
 
 .if defined(WITH_SMOOTH)
