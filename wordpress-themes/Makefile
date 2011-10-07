@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	wordpress-themes
-PORTVERSION=	2011084
+PORTVERSION=	20111007
 CATEGORIES=	www
 MASTER_SITES=	http://wordpress.org/extend/themes/download/
 DIST_SUBDIR=	wordpress
@@ -82,7 +82,7 @@ DISTFILES+=	vermillon.1.0.2.1.zip
 .endif
 
 .if defined(WITH_ATAHUALPA)
-DISTFILES+=	atahualpa.3.6.7.zip
+DISTFILES+=	atahualpa.3.7.1.zip
 .endif
 
 .if defined(WITH_PIANO_BLACK)
@@ -166,7 +166,7 @@ DISTFILES+=	eos.1.3.11.zip
 .endif
 
 .if defined(WITH_HYBRID)
-DISTFILES+=	hybrid.0.9.zip
+DISTFILES+=	hybrid.1.0.zip
 .endif
 
 .if defined(WITH_INANIS_GLASS)
@@ -190,7 +190,7 @@ DISTFILES+=	sliding-door.2.6.1.zip
 .endif
 
 .if defined(WITH_SUFFUSION)
-DISTFILES+=	suffusion.3.8.2.zip
+DISTFILES+=	suffusion.3.9.0.zip
 .endif
 
 .if defined(WITH_THEMATIC)
@@ -198,7 +198,7 @@ DISTFILES+=	thematic.0.9.7.7.zip
 .endif
 
 .if defined(WITH_P2)
-DISTFILES+=	p2.1.3.2.zip
+DISTFILES+=	p2.1.3.3.zip
 .endif
 
 .if defined(WITH_CORDOBO_GREEN_PARK_2)
@@ -210,7 +210,7 @@ DISTFILES+=	titan.1.25.zip
 .endif
 
 .if defined(WITH_ZBENCH)
-DISTFILES+=	zbench.1.2.7.zip
+DISTFILES+=	zbench.1.2.9.zip
 .endif
 
 .if defined(WITH_INTREPIDITY)
@@ -250,11 +250,11 @@ DISTFILES+=	wp-andreas01.2.0.zip
 .endif
 
 .if defined(WITH_ADVENTURE_JOURNAL)
-DISTFILES+=	adventure-journal.1.7.1.zip
+DISTFILES+=	adventure-journal.1.7.2.zip
 .endif
 
 .if defined(WITH_TOOLBOX)
-DISTFILES+=	toolbox.1.2.zip
+DISTFILES+=	toolbox.1.3.zip
 .endif
 
 .if defined(WITH_EASEL)
@@ -266,11 +266,11 @@ DISTFILES+=	coraline.1.0.2.zip
 .endif
 
 .if defined(WITH_NEWS)
-DISTFILES+=	news.0.1.zip
+DISTFILES+=	news.0.2.zip
 .endif
 
 .if defined(WITH_LIQUORICE)
-DISTFILES+=	liquorice.2.0.0.zip
+DISTFILES+=	liquorice.2.0.zip
 .endif
 
 .if defined(WITH_TWENTY_TEN)
@@ -278,11 +278,11 @@ DISTFILES+=	twentyten.1.1.zip
 .endif
 
 .if defined(WITH_IFEATURE)
-DISTFILES+=	ifeature.2.0.3.zip
+DISTFILES+=	ifeature.2.0.8.zip
 .endif
 
 .if defined(WITH_PLATFORM)
-DISTFILES+=	platform.1.3.2.zip
+DISTFILES+=	platform.1.3.7.zip
 .endif
 
 WORDPRESS_THEME?=	${WORDPRESS}/wp-content/themes
