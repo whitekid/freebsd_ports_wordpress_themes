@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	wordpress-themes
-PORTVERSION=	20111007
+PORTVERSION=	20120222
 CATEGORIES=	www
 MASTER_SITES=	http://wordpress.org/extend/themes/download/
 DIST_SUBDIR=	wordpress
@@ -66,8 +66,10 @@ OPTIONS=	VERMILLON "Enable Vermillon theme" on \
 		CORALINE "Enable Coraline theme" on \
 		NEWS "Enable News theme" on \
 		TWENTY_TEN "Enable Twenty Ten theme" on \
+		TWENTY_ELEVEN "Enable Twenty Eleven theme" on \
 		IFEATURE "Enable iFeature theme" on \
-		PLATFORM "Enable Platform theme" on
+		PLATFORM "Enable Platform theme" on \
+		ANNOTUM_BASE "Enable Annotum Base theme" on
 
 NO_BUILD?=	yes
 WRKSRC?=	${WRKDIR}
@@ -82,7 +84,7 @@ DISTFILES+=	vermillon.1.0.2.1.zip
 .endif
 
 .if defined(WITH_ATAHUALPA)
-DISTFILES+=	atahualpa.3.7.1.zip
+DISTFILES+=	atahualpa.3.7.3.zip
 .endif
 
 .if defined(WITH_PIANO_BLACK)
@@ -98,7 +100,7 @@ DISTFILES+=	chocotheme.0.10.zip
 .endif
 
 .if defined(WITH_CONSTRUCTOR)
-DISTFILES+=	constructor.1.6.4.zip
+DISTFILES+=	constructor.1.6.5.zip
 .endif
 
 .if defined(WITH_ARJUNA_X)
@@ -190,7 +192,7 @@ DISTFILES+=	sliding-door.2.6.1.zip
 .endif
 
 .if defined(WITH_SUFFUSION)
-DISTFILES+=	suffusion.3.9.0.zip
+DISTFILES+=	suffusion.4.0.0.zip
 .endif
 
 .if defined(WITH_THEMATIC)
@@ -210,7 +212,7 @@ DISTFILES+=	titan.1.25.zip
 .endif
 
 .if defined(WITH_ZBENCH)
-DISTFILES+=	zbench.1.2.9.zip
+DISTFILES+=	zbench.1.3.2.zip
 .endif
 
 .if defined(WITH_INTREPIDITY)
@@ -234,11 +236,11 @@ DISTFILES+=	retromania.1.5.zip
 .endif
 
 .if defined(WITH_THE_ERUDITE)
-DISTFILES+=	the-erudite.2.7.8.zip
+DISTFILES+=	the-erudite.3.1.zip
 .endif
 
 .if defined(WITH_MAGAZINE_BASIC)
-DISTFILES+=	magazine-basic.2.7.3.zip
+DISTFILES+=	magazine-basic.2.7.7.zip
 .endif
 
 .if defined(WITH_JOURNALIST)
@@ -254,7 +256,7 @@ DISTFILES+=	adventure-journal.1.7.2.zip
 .endif
 
 .if defined(WITH_TOOLBOX)
-DISTFILES+=	toolbox.1.3.zip
+DISTFILES+=	toolbox.1.4.zip
 .endif
 
 .if defined(WITH_EASEL)
@@ -262,7 +264,7 @@ DISTFILES+=	easel.2.0.7.zip
 .endif
 
 .if defined(WITH_CORALINE)
-DISTFILES+=	coraline.1.0.2.zip
+DISTFILES+=	coraline.1.2.zip
 .endif
 
 .if defined(WITH_NEWS)
@@ -270,19 +272,27 @@ DISTFILES+=	news.0.2.zip
 .endif
 
 .if defined(WITH_LIQUORICE)
-DISTFILES+=	liquorice.2.0.zip
+DISTFILES+=	liquorice.2.2.zip
 .endif
 
 .if defined(WITH_TWENTY_TEN)
-DISTFILES+=	twentyten.1.1.zip
+DISTFILES+=	twentyten.1.3.zip
+.endif
+
+.if defined(WITH_TWENTY_ELEVEN)
+DISTFILES+=	twentyten.1.3.zip
 .endif
 
 .if defined(WITH_IFEATURE)
-DISTFILES+=	ifeature.2.0.8.zip
+DISTFILES+=	ifeature.4.0.4.zip
 .endif
 
 .if defined(WITH_PLATFORM)
-DISTFILES+=	platform.1.3.7.zip
+DISTFILES+=	platform.1.4.2.zip
+.endif
+
+.if defined(WITH_ANNOTUM_BASE)
+DISTFILES+=	annotum-base.1.0.zip
 .endif
 
 WORDPRESS_THEME?=	${WORDPRESS}/wp-content/themes
