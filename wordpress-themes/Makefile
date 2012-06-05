@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	wordpress-themes
-PORTVERSION=	20120222
+PORTVERSION=	20120531
 CATEGORIES=	www
 MASTER_SITES=	http://wordpress.org/extend/themes/download/
 DIST_SUBDIR=	wordpress
@@ -84,7 +84,7 @@ DISTFILES+=	vermillon.1.0.2.1.zip
 .endif
 
 .if defined(WITH_ATAHUALPA)
-DISTFILES+=	atahualpa.3.7.3.zip
+DISTFILES+=	atahualpa.3.7.7.zip
 .endif
 
 .if defined(WITH_PIANO_BLACK)
@@ -132,11 +132,11 @@ DISTFILES+=	monochrome.3.0.4.zip
 .endif
 
 .if defined(WITH_MULTI_COLOR)
-DISTFILES+=	multi-color.1.7.zip
+DISTFILES+=	multi-color.4.3.zip
 .endif
 
 .if defined(WITH_MYSTIQUE)
-DISTFILES+=	mystique.2.5.1.zip
+DISTFILES+=	mystique.2.5.7.zip
 .endif
 
 .if defined(WITH_NOTEPAD_THEME)
@@ -192,15 +192,15 @@ DISTFILES+=	sliding-door.2.6.1.zip
 .endif
 
 .if defined(WITH_SUFFUSION)
-DISTFILES+=	suffusion.4.0.0.zip
+DISTFILES+=	suffusion.4.2.0.zip
 .endif
 
 .if defined(WITH_THEMATIC)
-DISTFILES+=	thematic.0.9.7.7.zip
+DISTFILES+=	thematic.1.0.1.zip
 .endif
 
 .if defined(WITH_P2)
-DISTFILES+=	p2.1.3.3.zip
+DISTFILES+=	p2.1.4.0.zip
 .endif
 
 .if defined(WITH_CORDOBO_GREEN_PARK_2)
@@ -212,7 +212,7 @@ DISTFILES+=	titan.1.25.zip
 .endif
 
 .if defined(WITH_ZBENCH)
-DISTFILES+=	zbench.1.3.2.zip
+DISTFILES+=	zbench.1.3.5.zip
 .endif
 
 .if defined(WITH_INTREPIDITY)
@@ -260,7 +260,7 @@ DISTFILES+=	toolbox.1.4.zip
 .endif
 
 .if defined(WITH_EASEL)
-DISTFILES+=	easel.2.0.7.zip
+DISTFILES+=	easel.3.0.1.zip
 .endif
 
 .if defined(WITH_CORALINE)
@@ -284,7 +284,7 @@ DISTFILES+=	twentyten.1.3.zip
 .endif
 
 .if defined(WITH_IFEATURE)
-DISTFILES+=	ifeature.4.0.4.zip
+DISTFILES+=	ifeature.4.5.5.zip
 .endif
 
 .if defined(WITH_PLATFORM)
