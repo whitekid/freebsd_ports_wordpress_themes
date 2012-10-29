@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	wordpress-themes
-PORTVERSION=	20120531
+PORTVERSION=	20120709
 CATEGORIES=	www
 MASTER_SITES=	http://wordpress.org/extend/themes/download/
 DIST_SUBDIR=	wordpress
@@ -84,7 +84,7 @@ DISTFILES+=	vermillon.1.0.2.1.zip
 .endif
 
 .if defined(WITH_ATAHUALPA)
-DISTFILES+=	atahualpa.3.7.7.zip
+DISTFILES+=	atahualpa.3.7.9.zip
 .endif
 
 .if defined(WITH_PIANO_BLACK)
@@ -168,7 +168,7 @@ DISTFILES+=	eos.1.3.11.zip
 .endif
 
 .if defined(WITH_HYBRID)
-DISTFILES+=	hybrid.1.0.zip
+DISTFILES+=	hybrid.1.1.zip
 .endif
 
 .if defined(WITH_INANIS_GLASS)
@@ -188,19 +188,19 @@ DISTFILES+=	skinbu.1.5.0.zip
 .endif
 
 .if defined(WITH_SLIDINGDOOR)
-DISTFILES+=	sliding-door.2.6.1.zip
+DISTFILES+=	sliding-door.3.0.8.zip
 .endif
 
 .if defined(WITH_SUFFUSION)
-DISTFILES+=	suffusion.4.2.0.zip
+DISTFILES+=	suffusion.4.3.3.zip
 .endif
 
 .if defined(WITH_THEMATIC)
-DISTFILES+=	thematic.1.0.1.zip
+DISTFILES+=	thematic.1.0.2.1.zip
 .endif
 
 .if defined(WITH_P2)
-DISTFILES+=	p2.1.4.0.zip
+DISTFILES+=	p2.1.4.2.zip
 .endif
 
 .if defined(WITH_CORDOBO_GREEN_PARK_2)
@@ -236,11 +236,11 @@ DISTFILES+=	retromania.1.5.zip
 .endif
 
 .if defined(WITH_THE_ERUDITE)
-DISTFILES+=	the-erudite.3.1.zip
+DISTFILES+=	the-erudite.3.2.zip
 .endif
 
 .if defined(WITH_MAGAZINE_BASIC)
-DISTFILES+=	magazine-basic.2.7.7.zip
+DISTFILES+=	magazine-basic.2.7.9.zip
 .endif
 
 .if defined(WITH_JOURNALIST)
@@ -260,7 +260,7 @@ DISTFILES+=	toolbox.1.4.zip
 .endif
 
 .if defined(WITH_EASEL)
-DISTFILES+=	easel.3.0.1.zip
+DISTFILES+=	easel.3.1.1.zip
 .endif
 
 .if defined(WITH_CORALINE)
@@ -268,7 +268,7 @@ DISTFILES+=	coraline.1.2.zip
 .endif
 
 .if defined(WITH_NEWS)
-DISTFILES+=	news.0.2.zip
+DISTFILES+=	news.0.3.zip
 .endif
 
 .if defined(WITH_LIQUORICE)
@@ -276,15 +276,15 @@ DISTFILES+=	liquorice.2.2.zip
 .endif
 
 .if defined(WITH_TWENTY_TEN)
-DISTFILES+=	twentyten.1.3.zip
+DISTFILES+=	twentyten.1.4.zip
 .endif
 
 .if defined(WITH_TWENTY_ELEVEN)
-DISTFILES+=	twentyten.1.3.zip
+DISTFILES+=	twentyeleven.1.4.zip
 .endif
 
 .if defined(WITH_IFEATURE)
-DISTFILES+=	ifeature.4.5.5.zip
+DISTFILES+=	ifeature.4.5.27.zip
 .endif
 
 .if defined(WITH_PLATFORM)
