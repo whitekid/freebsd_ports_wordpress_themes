@@ -6,131 +6,134 @@
 #
 
 PORTNAME=	wordpress-themes
-PORTVERSION=	20130320
+PORTVERSION=	20160303
 CATEGORIES=	www
-MASTER_SITES=	http://wordpress.org/extend/themes/download/
+MASTER_SITES=	https://downloads.wordpress.org/theme/
 DIST_SUBDIR=	wordpress
 
 MAINTAINER=	whitekid@gmail.com
 COMMENT=	Wordpress themes
 
+USES=		zip
+
 RUN_DEPENDS=	wordpress>=0:${PORTSDIR}/www/wordpress
 
-OPTIONS_DEFINE=	VERMILLON \
-		ATAHUALPA \
-		PIANO_BLACK \
-		JQ \
-		CHOCO \
-		CONSTRUCTOR \
-		ARJUNA_X \
-		SMOOTH \
-		PIXEL \
-		MOTION \
-		LIGHTWORD \
-		COMMENT_CENTRAL \
-		MONOCHROME \
-		MULTI_COLOR \
-		MYSTIQUE \
-		NOTEPAD_THEME \
-		HOLISTIC_TEAHOUSE \
-		WHITEHOUSE \
+OPTIONS_DEFINE= \
+		ADVENTURE_JOURNAL \
+		ANNOTUM_BASE \
 		ARCLITE \
+		ARJUNA_X \
+		ATAHUALPA \
+		CHOCO \
+		COMMENT_CENTRAL \
+		CONSTRUCTOR \
+		CORALINE \
+		CORDOBO_GREEN_PARK_2 \
 		DARK_WOOD \
+		EDEGREE \
 		ELEGANT_GRUNGE \
 		EOS \
+		HOLISTIC_TEAHOUSE \
 		HYBRID \
+		IDREAM \
+		IFEATURE \
 		INANIS_GLASS \
 		INOVE \
+		INTREPIDITY \
+		JOURNALIST \
+		JQ \
+		LIGHTWORD \
+		LIQUORICE \
+		MAGAZINE_BASIC \
+		MONOCHROME \
+		MOTION \
+		MULTI_COLOR \
+		MYSTIQUE \
+		NEWS \
+		NOTEPAD_THEME \
 		ORGANIC_THEME \
+		P2 \
+		PIANO_BLACK \
+		PIXEL \
+		PLATFORM \
+		RETROMANIA \
 		SKINBU \
 		SLIDINGDOOR \
+		SMOOTH \
 		SUFFUSION \
 		THEMATIC \
-		P2 \
-		CORDOBO_GREEN_PARK_2 \
-		TITAN \
-		ZBENCH \
-		INTREPIDITY \
-		EDEGREE \
-		IDREAM \
-		UNDER_INFLUENCE \
-		RETROMANIA \
 		THE_ERUDITE \
-		MAGAZINE_BASIC \
-		JOURNALIST \
-		WP_ANDREAS01 \
-		ADVENTURE_JOURNAL \
-		TOOLBOX \
-		EASEL \
-		LIQUORICE \
-		CORALINE \
-		NEWS \
-		TWENTY_TEN \
+		TITAN \
 		TWENTY_ELEVEN \
-		IFEATURE \
-		PLATFORM \
-		ANNOTUM_BASE
+		TWENTY_TEN \
+		TWENTY_THIRTEEN \
+		TWENTY_TWELVE \
+		UNDER_INFLUENCE \
+		VERMILLON \
+		WHITEHOUSE \
+		WP_ANDREAS01 \
+		ZBENCH
 
-VERMILLON	= Enable Vermillon theme
-ATAHUALPA	= Enable Atahualpa theme
-PIANO_BLACK	= Enable Piano Black theme
-JQ	= Enable jQ theme
-CHOCO	= Enable Choco theme
-CONSTRUCTOR	= Enable Constructor theme
-ARJUNA_X	= Enable Arjuna X theme
-SMOOTH	= Enable Smooth theme
-PIXEL	= Enable Pixel theme
-MOTION	= Enable Motion theme
-LIGHTWORD	= Enable LightWord theme
-COMMENT_CENTRAL	= Enable Comment Central theme
-MONOCHROME	= Enable Monochrome theme
-MULTI_COLOR	= Enable Multi-Color theme
-MYSTIQUE	= Enable Mystique theme
-NOTEPAD_THEME	= Enable Notepad theme
-HOLISTIC_TEAHOUSE	= Enable Holistic Teahouse theme
-WHITEHOUSE	= Enable WhiteHouse theme
-ARCLITE	= Enable Arclite theme
-DARK_WOOD	= Enable Dark Wood theme
-ELEGANT_GRUNGE	= Enable Elegant Grunge theme
-EOS	= Enable Eos theme
-HYBRID	= Enable Hybrid theme
-INANIS_GLASS	= Enable Inanis Glass theme
-INOVE	= Enable iNove Glass theme
-ORGANIC_THEME	= Enable Organic theme
-SKINBU	= Enable Skinbu theme
-SLIDINGDOOR	= Enable Sliding Door theme
-SUFFUSION	= Enable Suffusion theme
-THEMATIC	= Enable Thematic theme
-P2	= Enable P2 theme
-CORDOBO_GREEN_PARK_2	= Enable Cordobo Green Park 2 theme
-TITAN	= Enable Titan theme
-ZBENCH	= Enable zBench theme
-INTREPIDITY	= Enable intrepidity theme
-EDEGREE	= Enable eDegree theme
-IDREAM	= Enable iDream theme
-UNDER_INFLUENCE	= Enable Under the Influence theme
-RETROMANIA	= Enable Retromania theme
-THE_ERUDITE	= Enable The Erudite theme
-MAGAZINE_BASIC	= Enable Magazine Basic theme
-JOURNALIST	= Enable Journalist theme
-WP_ANDREAS01	= Enable WP-Andreas01 theme
-ADVENTURE_JOURNAL	= Enable Adventure Journal theme
-TOOLBOX	= Enable Toolbox theme
-EASEL	= Enable Easel theme
-LIQUORICE	= Enable Liquorice theme
-CORALINE	= Enable Coraline theme
-NEWS	= Enable News theme
-TWENTY_TEN	= Enable Twenty Ten theme
-TWENTY_ELEVEN	= Enable Twenty Eleven theme
-IFEATURE	= Enable iFeature theme
-PLATFORM	= Enable Platform theme
-ANNOTUM_BASE	= Enable Annotum Base theme
+OPTIONS_DEFAULT=	${OPTIONS_DEFINE}
 
-NO_BUILD?=	yes
+ADVENTURE_JOURNAL_DESC	= Enable Adventure Journal theme
+ANNOTUM_BASE_DESC	= Enable Annotum Base theme
+ARCLITE_DESC	= Enable Arclite theme
+ARJUNA_X_DESC	= Enable Arjuna X theme
+ATAHUALPA_DESC	= Enable Atahualpa theme
+CHOCO_DESC	= Enable Choco theme
+COMMENT_CENTRAL_DESC	= Enable Comment Central theme
+CONSTRUCTOR_DESC	= Enable Constructor theme
+CORALINE_DESC	= Enable Coraline theme
+CORDOBO_GREEN_PARK_2_DESC	= Enable Cordobo Green Park 2 theme
+DARK_WOOD_DESC	= Enable Dark Wood theme
+EDEGREE_DESC	= Enable eDegree theme
+ELEGANT_GRUNGE_DESC	= Enable Elegant Grunge theme
+EOS_DESC	= Enable Eos theme
+HOLISTIC_TEAHOUSE_DESC	= Enable Holistic Teahouse theme
+HYBRID_DESC	= Enable Hybrid theme
+IDREAM_DESC	= Enable iDream theme
+IFEATURE_DESC	= Enable iFeature theme
+INANIS_GLASS_DESC	= Enable Inanis Glass theme
+INOVE_DESC	= Enable iNove Glass theme
+INTREPIDITY_DESC	= Enable intrepidity theme
+JOURNALIST_DESC	= Enable Journalist theme
+JQ_DESC	= Enable jQ theme
+LIGHTWORD_DESC	= Enable LightWord theme
+LIQUORICE_DESC	= Enable Liquorice theme
+MAGAZINE_BASIC_DESC	= Enable Magazine Basic theme
+MONOCHROME_DESC	= Enable Monochrome theme
+MOTION_DESC	= Enable Motion theme
+MULTI_COLOR_DESC	= Enable Multi-Color theme
+MYSTIQUE_DESC	= Enable Mystique theme
+NEWS_DESC	= Enable News theme
+NOTEPAD_THEME_DESC	= Enable Notepad theme
+ORGANIC_THEME_DESC	= Enable Organic theme
+P2_DESC		= Enable P2 theme
+PIANO_BLACK_DESC	= Enable Piano Black theme
+PIXEL_DESC	= Enable Pixel theme
+PLATFORM_DESC	= Enable Platform theme
+RETROMANIA_DESC	= Enable Retromania theme
+SKINBU_DESC	= Enable Skinbu theme
+SLIDINGDOOR_DESC	= Enable Sliding Door theme
+SMOOTH_DESC	= Enable Smooth theme
+SUFFUSION_DESC	= Enable Suffusion theme
+THEMATIC_DESC	= Enable Thematic theme
+THE_ERUDITE_DESC	= Enable The Erudite theme
+TITAN_DESC	= Enable Titan theme
+TWENTY_ELEVEN_DESC	= Enable Twenty Eleven theme
+TWENTY_TEN_DESC	= Enable Twenty Ten theme
+TWENTY_THIRTEEN_DESC	= Enable Twenty Thirteen theme
+TWENTY_TWELVE_DESC	= Enable Twenty Twelve theme
+UNDER_INFLUENCE_DESC	= Enable Under the Influence theme
+VERMILLON_DESC	= Enable Vermillon theme
+WHITEHOUSE_DESC	= Enable WhiteHouse theme
+WP_ANDREAS01_DESC	= Enable WP-Andreas01 theme
+ZBENCH_DESC	= Enable zBench theme
+
+NO_BUILD=	yes
 WRKSRC?=	${WRKDIR}
-PLIST=		${WRKDIR}/plist
-
-WORDPRESS=	www/wordpress
+PLIST=		${WRKDIR}/pkg-plist
 
 .include <bsd.port.options.mk>
 
@@ -139,7 +142,7 @@ DISTFILES+=	vermillon.1.0.2.1.zip
 .endif
 
 .if ${PORT_OPTIONS:MATAHUALPA}
-DISTFILES+=	atahualpa.3.7.12.zip
+DISTFILES+=	atahualpa.3.7.24.zip
 .endif
 
 .if ${PORT_OPTIONS:MPIANO_BLACK}
@@ -243,11 +246,11 @@ DISTFILES+=	skinbu.1.5.0.zip
 .endif
 
 .if ${PORT_OPTIONS:MSLIDINGDOOR}
-DISTFILES+=	sliding-door.3.0.9.zip
+DISTFILES+=	sliding-door.3.2.4.zip
 .endif
 
 .if ${PORT_OPTIONS:MSUFFUSION}
-DISTFILES+=	suffusion.4.4.7.zip
+DISTFILES+=	suffusion.4.4.9.zip
 .endif
 
 .if ${PORT_OPTIONS:MTHEMATIC}
@@ -255,7 +258,7 @@ DISTFILES+=	thematic.1.0.4.zip
 .endif
 
 .if ${PORT_OPTIONS:MP2}
-DISTFILES+=	p2.1.5.1.zip
+DISTFILES+=	p2.1.5.8.zip
 .endif
 
 .if ${PORT_OPTIONS:MCORDOBO_GREEN_PARK_2}
@@ -267,7 +270,7 @@ DISTFILES+=	titan.2.3.1.zip
 .endif
 
 .if ${PORT_OPTIONS:MZBENCH}
-DISTFILES+=	zbench.1.3.7.zip
+DISTFILES+=	zbench.1.4.2.zip
 .endif
 
 .if ${PORT_OPTIONS:MINTREPIDITY}
@@ -295,7 +298,7 @@ DISTFILES+=	the-erudite.3.2.zip
 .endif
 
 .if ${PORT_OPTIONS:MMAGAZINE_BASIC}
-DISTFILES+=	magazine-basic.3.0.3.zip
+DISTFILES+=	magazine-basic.3.0.6.zip
 .endif
 
 .if ${PORT_OPTIONS:MJOURNALIST}
@@ -310,16 +313,8 @@ DISTFILES+=	wp-andreas01.2.0.zip
 DISTFILES+=	adventure-journal.1.7.2.zip
 .endif
 
-.if ${PORT_OPTIONS:MTOOLBOX}
-DISTFILES+=	toolbox.1.4.zip
-.endif
-
-.if ${PORT_OPTIONS:MEASEL}
-DISTFILES+=	easel.3.3.3.zip
-.endif
-
 .if ${PORT_OPTIONS:MCORALINE}
-DISTFILES+=	coraline.1.4.1.zip
+DISTFILES+=	coraline.1.5.2.zip
 .endif
 
 .if ${PORT_OPTIONS:MNEWS}
@@ -331,43 +326,50 @@ DISTFILES+=	liquorice.2.3.zip
 .endif
 
 .if ${PORT_OPTIONS:MTWENTY_TEN}
-DISTFILES+=	twentyten.1.6.zip
+DISTFILES+=	twentyten.2.1.zip
 .endif
 
 .if ${PORT_OPTIONS:MTWENTY_ELEVEN}
-DISTFILES+=	twentyeleven.1.5.zip
+DISTFILES+=	twentyeleven.2.3.zip
+.endif
+
+.if ${PORT_OPTIONS:MTWENTY_TWELVE}
+DISTFILES+=	twentytwelve.1.9.zip
+.endif
+
+.if ${PORT_OPTIONS:MTWENTY_THIRTEEN}
+DISTFILES+=	twentythirteen.1.7.zip
 .endif
 
 .if ${PORT_OPTIONS:MIFEATURE}
-DISTFILES+=	ifeature.5.1.30.zip
+DISTFILES+=	ifeature.5.5.6.zip
 .endif
 
 .if ${PORT_OPTIONS:MPLATFORM}
-DISTFILES+=	platform.1.4.3.zip
+DISTFILES+=	platform.1.4.4.zip
 .endif
 
 .if ${PORT_OPTIONS:MANNOTUM_BASE}
-DISTFILES+=	annotum-base.1.1.1.zip
+DISTFILES+=	annotum-base.2.0.zip
 .endif
 
-WORDPRESS_THEME?=	${WORDPRESS}/wp-content/themes
+THEME_DIR=	${PREFIX}/www/wordpress/wp-content/themes
 THEME_DIRS=	${DISTFILES:C|\.[\.0-9]+\.zip||}
 
-pre-install:
-	@${RM} -rf ${PLIST}
-	@${TOUCH} ${PLIST}
+post-patch:
+	@${RM} -f ${PLIST}
 
 .for f in ${THEME_DIRS}
 	@cd ${WRKSRC} && \
-	${FIND} -s ${f} -type f | ${SED} -e 's|^|${WORDPRESS_THEME}/|' >> ${PLIST} && \
-	${FIND} -d ${f} -type d | ${SED} -e 's|^|@dirrm ${WORDPRESS_THEME}/|' >> ${PLIST}
+	${FIND} -s ${f} -type f | ${SED} -e 's|^|${THEME_DIR}/|' >> ${PLIST} && \
+	${FIND} -d ${f} -type d | ${SED} -e 's|^|@dirrm ${THEME_DIR}/|' >> ${PLIST}
 .endfor
 
 do-install:
 .for f in ${THEME_DIRS}
 	@cd ${WRKSRC} && \
-	${FIND} ${f} -type d -exec ${MKDIR} ${PREFIX}/${WORDPRESS_THEME}/{} \; && \
-	${FIND} ${f} -type f -exec ${CP} {} ${PREFIX}/${WORDPRESS_THEME}/{} \;
+	${FIND} ${f} -type d -exec ${MKDIR} ${STAGEDIR}${THEME_DIR}/{} \; && \
+	${FIND} ${f} -type f -exec ${CP} {} ${STAGEDIR}${THEME_DIR}/{} \;
 .endfor
 
 .include <bsd.port.mk>
