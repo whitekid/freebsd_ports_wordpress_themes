@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	wordpress-themes
-PORTVERSION=	20160303
+PORTVERSION=	20160316
 CATEGORIES=	www
 MASTER_SITES=	https://downloads.wordpress.org/theme/
 DIST_SUBDIR=	wordpress
@@ -238,7 +238,7 @@ DISTFILES+=	liquorice.2.3.zip
 .endif
 
 .if ${PORT_OPTIONS:MMAGAZINE_BASIC}
-DISTFILES+=	magazine-basic.3.0.6.zip
+DISTFILES+=	magazine-basic.3.0.7.zip
 .endif
 
 .if ${PORT_OPTIONS:MMONOCHROME}
