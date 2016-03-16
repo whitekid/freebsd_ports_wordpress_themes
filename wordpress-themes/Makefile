@@ -50,9 +50,9 @@ OPTIONS_DEFINE= \
 		MULTI_COLOR \
 		MYSTIQUE \
 		NEWS \
-		NOTEPAD_THEME \
+		NOTEPAD \
 		ORBIT \
-		ORGANIC_THEME \
+		ORGANIC \
 		P2 \
 		PIANO_BLACK \
 		PIXEL \
@@ -108,9 +108,9 @@ MOTION_DESC	= Enable Motion theme
 MULTI_COLOR_DESC	= Enable Multi-Color theme
 MYSTIQUE_DESC	= Enable Mystique theme
 NEWS_DESC	= Enable News theme
-NOTEPAD_THEME_DESC	= Enable Notepad theme
+NOTEPAD_DESC	= Enable Notepad theme
 ORBIT_DESC	= Enable Orbit theme
-ORGANIC_THEME_DESC	= Enable Organic theme
+ORGANIC_DESC	= Enable Organic theme
 P2_DESC		= Enable P2 theme
 PIANO_BLACK_DESC	= Enable Piano Black theme
 PIXEL_DESC	= Enable Pixel theme
@@ -263,7 +263,7 @@ DISTFILES+=	mystique.2.5.7.zip
 DISTFILES+=	news.0.3.zip
 .endif
 
-.if ${PORT_OPTIONS:MNOTEPAD_THEME}
+.if ${PORT_OPTIONS:MNOTEPAD}
 DISTFILES+=	notepad-theme.1.3.zip
 .endif
 
@@ -271,7 +271,7 @@ DISTFILES+=	notepad-theme.1.3.zip
 DISTFILES+=	orbit.1.2.1.zip
 .endif
 
-.if ${PORT_OPTIONS:MORGANIC_THEME}
+.if ${PORT_OPTIONS:MORGANIC}
 DISTFILES+=	organic-theme.1.9.4.zip
 .endif
 
