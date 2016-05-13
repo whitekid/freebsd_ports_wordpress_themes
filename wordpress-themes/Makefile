@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	wordpress-themes
-PORTVERSION=	20160316
+PORTVERSION=	20160513
 CATEGORIES=	www
 MASTER_SITES=	https://downloads.wordpress.org/theme/
 DIST_SUBDIR=	wordpress
@@ -36,7 +36,7 @@ DISTFILES= \
 	holistic-teahouse.1.3.zip \
 	hybrid.1.2.zip \
 	idream.1.0.2.zip \
-	ifeature.5.5.6.zip \
+	ifeature.5.5.7.zip \
 	inanis-glass.1.3.6.zip \
 	inove.1.4.6.zip \
 	intrepidity.1.5.1.zip \
@@ -66,10 +66,10 @@ DISTFILES= \
 	the-erudite.3.2.zip \
 	thematic.1.0.4.zip \
 	titan.2.3.1.zip \
-	twentyeleven.2.3.zip \
+	twentyeleven.2.4.zip \
 	twentyten.2.1.zip \
-	twentythirteen.1.7.zip \
-	twentytwelve.1.9.zip \
+	twentythirteen.1.9.zip \
+	twentytwelve.2.0.zip \
 	under-the-influence.1.03.zip \
 	vermillon.1.0.2.1.zip \
 	white.1.1.zip \
